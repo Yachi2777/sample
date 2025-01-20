@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page2 {
+    background-color: dodgerblue;
+    color: floralwhite;
+    margin: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(63, 58, 85, 0.8);
+    border: 3px solid #fff;
+    border: rigid solid;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-color: #101941;
+    box-shadow: 3px 4px 6px rgba(35, 4, 87, 0.274);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-top: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #0a1c69;
+}
+
+a {
+    text-decoration: none;
+    color: floralwhite;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .img-container {
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        max-width: 90%;
+    }
+}
+
+button {
+    background-color: #1a2041;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 2px 0px rgb(68, 95, 68);
+}
+
+button:hover {
+    background-color: #2d348f;
+}
